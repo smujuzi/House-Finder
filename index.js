@@ -5,13 +5,13 @@ const options = {
   method: "GET",
   url: "https://zoopla.p.rapidapi.com/properties/list",
   params: {
-    area: "Oxford, Oxfordshire",
-    identifier: "oxford",
+    area: "Bristol",
+    identifier: "Bristol",
     category: "residential",
     order_by: "age",
     ordering: "descending",
     page_number: "1",
-    page_size: "40",
+    page_size: "3",
   },
   headers: {
     "X-RapidAPI-Key": "089aea949emsh29311d4e333bfddp16131fjsn4d530b81cb2d",
