@@ -1,0 +1,181 @@
+{
+    "rental_prices": {
+        "shared_occupancy": "N",
+        "per_week": 531,
+        "accurate": "per_month",
+        "per_month": 2300
+    },
+    "country_code": "gb",
+    "num_floors": 0,
+    "view_count_30day": 0,
+    "image_150_113_url": "https://lid.zoocdn.com/150/113/ab0868312555cca5abaee3cbbebc39c33b3639f5.jpg",
+    "listing_status": "rent",
+    "num_bedrooms": 4,
+    "location_is_approximate": 0,
+    "image_50_38_url": "https://lid.zoocdn.com/50/38/ab0868312555cca5abaee3cbbebc39c33b3639f5.jpg",
+    "latitude": 51.75319,
+    "view_count": 0,
+    "furnished_state": "unfurnished",
+    "agent_address": "Office 34, 67-68 Hatton Garden, London",
+    "branch_id": "54584",
+    "category": "Residential",
+    "property_type": "Terraced house",
+    "letting_fees": "OpenRent is the UK's largest letting agent, using online services to make renting properties cheaper and more convenient than ever before - while holding quality and security as our top priorities.<br><br>OpenRent has never charged any administration or agency fees.<br><br>Under the Tenant Fees Act 2019, landlords may charge you a fee if you lose keys or other security devices, or pay your rent late. You may also be asked for other permitted payments, such as a holding deposit when you begin your application.<br><br>There are no hidden fees or other charges when renting an OpenRent property.<br><br>OpenRent is a proud member of the Property Ombudsman and holds comprehensive Client Money Protection via the government-authorised Client Money Protect scheme.<br><br>OpenRent is a registered agent in Scotland with registration number LARN1809026 and is a member of RentSmart Wales with license number #lr .<br><h3 class=\"listing-desc-header top\"><strong><br></strong></h3>",
+    "images": [
+        {
+            "original": "https://lc.zoocdn.com/ab0868312555cca5abaee3cbbebc39c33b3639f5.jpg",
+            "480x360": "https://lid.zoocdn.com/480/360/ab0868312555cca5abaee3cbbebc39c33b3639f5.jpg",
+            "354x255": "https://lid.zoocdn.com/354/255/ab0868312555cca5abaee3cbbebc39c33b3639f5.jpg",
+            "645x430": "https://lid.zoocdn.com/645/430/ab0868312555cca5abaee3cbbebc39c33b3639f5.jpg",
+            "80x60": "https://lid.zoocdn.com/80/60/ab0868312555cca5abaee3cbbebc39c33b3639f5.jpg",
+            "768x576": "https://lid.zoocdn.com/768/576/ab0868312555cca5abaee3cbbebc39c33b3639f5.jpg",
+            "150x113": "https://lid.zoocdn.com/150/113/ab0868312555cca5abaee3cbbebc39c33b3639f5.jpg",
+            "1024x768": "https://lid.zoocdn.com/1024/768/ab0868312555cca5abaee3cbbebc39c33b3639f5.jpg",
+            "caption": "",
+            "50x38": "https://lid.zoocdn.com/50/38/ab0868312555cca5abaee3cbbebc39c33b3639f5.jpg",
+            "240x180": "https://lid.zoocdn.com/240/180/ab0868312555cca5abaee3cbbebc39c33b3639f5.jpg"
+        },
+        {
+            "original": "https://lc.zoocdn.com/dbc3f0844381b2bee7cce4ce3cc9dac9007e46e2.jpg",
+            "480x360": "https://lid.zoocdn.com/480/360/dbc3f0844381b2bee7cce4ce3cc9dac9007e46e2.jpg",
+            "354x255": "https://lid.zoocdn.com/354/255/dbc3f0844381b2bee7cce4ce3cc9dac9007e46e2.jpg",
+            "645x430": "https://lid.zoocdn.com/645/430/dbc3f0844381b2bee7cce4ce3cc9dac9007e46e2.jpg",
+            "80x60": "https://lid.zoocdn.com/80/60/dbc3f0844381b2bee7cce4ce3cc9dac9007e46e2.jpg",
+            "768x576": "https://lid.zoocdn.com/768/576/dbc3f0844381b2bee7cce4ce3cc9dac9007e46e2.jpg",
+            "150x113": "https://lid.zoocdn.com/150/113/dbc3f0844381b2bee7cce4ce3cc9dac9007e46e2.jpg",
+            "1024x768": "https://lid.zoocdn.com/1024/768/dbc3f0844381b2bee7cce4ce3cc9dac9007e46e2.jpg",
+            "caption": "",
+            "50x38": "https://lid.zoocdn.com/50/38/dbc3f0844381b2bee7cce4ce3cc9dac9007e46e2.jpg",
+            "240x180": "https://lid.zoocdn.com/240/180/dbc3f0844381b2bee7cce4ce3cc9dac9007e46e2.jpg"
+        },
+        {
+            "original": "https://lc.zoocdn.com/02bca5d860fe468bf514728e8dbf8af5ceca6ad1.jpg",
+            "480x360": "https://lid.zoocdn.com/480/360/02bca5d860fe468bf514728e8dbf8af5ceca6ad1.jpg",
+            "354x255": "https://lid.zoocdn.com/354/255/02bca5d860fe468bf514728e8dbf8af5ceca6ad1.jpg",
+            "645x430": "https://lid.zoocdn.com/645/430/02bca5d860fe468bf514728e8dbf8af5ceca6ad1.jpg",
+            "80x60": "https://lid.zoocdn.com/80/60/02bca5d860fe468bf514728e8dbf8af5ceca6ad1.jpg",
+            "768x576": "https://lid.zoocdn.com/768/576/02bca5d860fe468bf514728e8dbf8af5ceca6ad1.jpg",
+            "150x113": "https://lid.zoocdn.com/150/113/02bca5d860fe468bf514728e8dbf8af5ceca6ad1.jpg",
+            "1024x768": "https://lid.zoocdn.com/1024/768/02bca5d860fe468bf514728e8dbf8af5ceca6ad1.jpg",
+            "caption": "",
+            "50x38": "https://lid.zoocdn.com/50/38/02bca5d860fe468bf514728e8dbf8af5ceca6ad1.jpg",
+            "240x180": "https://lid.zoocdn.com/240/180/02bca5d860fe468bf514728e8dbf8af5ceca6ad1.jpg"
+        },
+        {
+            "original": "https://lc.zoocdn.com/7d03efc01a875a79161df21a5ebcc6e2a113ac94.jpg",
+            "480x360": "https://lid.zoocdn.com/480/360/7d03efc01a875a79161df21a5ebcc6e2a113ac94.jpg",
+            "354x255": "https://lid.zoocdn.com/354/255/7d03efc01a875a79161df21a5ebcc6e2a113ac94.jpg",
+            "645x430": "https://lid.zoocdn.com/645/430/7d03efc01a875a79161df21a5ebcc6e2a113ac94.jpg",
+            "80x60": "https://lid.zoocdn.com/80/60/7d03efc01a875a79161df21a5ebcc6e2a113ac94.jpg",
+            "768x576": "https://lid.zoocdn.com/768/576/7d03efc01a875a79161df21a5ebcc6e2a113ac94.jpg",
+            "150x113": "https://lid.zoocdn.com/150/113/7d03efc01a875a79161df21a5ebcc6e2a113ac94.jpg",
+            "1024x768": "https://lid.zoocdn.com/1024/768/7d03efc01a875a79161df21a5ebcc6e2a113ac94.jpg",
+            "caption": "",
+            "50x38": "https://lid.zoocdn.com/50/38/7d03efc01a875a79161df21a5ebcc6e2a113ac94.jpg",
+            "240x180": "https://lid.zoocdn.com/240/180/7d03efc01a875a79161df21a5ebcc6e2a113ac94.jpg"
+        },
+        {
+            "original": "https://lc.zoocdn.com/ed9934d769c765729c98808e730d30b065b1cdb1.jpg",
+            "480x360": "https://lid.zoocdn.com/480/360/ed9934d769c765729c98808e730d30b065b1cdb1.jpg",
+            "354x255": "https://lid.zoocdn.com/354/255/ed9934d769c765729c98808e730d30b065b1cdb1.jpg",
+            "645x430": "https://lid.zoocdn.com/645/430/ed9934d769c765729c98808e730d30b065b1cdb1.jpg",
+            "80x60": "https://lid.zoocdn.com/80/60/ed9934d769c765729c98808e730d30b065b1cdb1.jpg",
+            "768x576": "https://lid.zoocdn.com/768/576/ed9934d769c765729c98808e730d30b065b1cdb1.jpg",
+            "150x113": "https://lid.zoocdn.com/150/113/ed9934d769c765729c98808e730d30b065b1cdb1.jpg",
+            "1024x768": "https://lid.zoocdn.com/1024/768/ed9934d769c765729c98808e730d30b065b1cdb1.jpg",
+            "caption": "",
+            "50x38": "https://lid.zoocdn.com/50/38/ed9934d769c765729c98808e730d30b065b1cdb1.jpg",
+            "240x180": "https://lid.zoocdn.com/240/180/ed9934d769c765729c98808e730d30b065b1cdb1.jpg"
+        }
+    ],
+    "longitude": -1.277387,
+    "listing_date": "2022-10-01 10:27:12",
+    "thumbnail_url": "https://lid.zoocdn.com/80/60/ab0868312555cca5abaee3cbbebc39c33b3639f5.jpg",
+    "description": "Property Reference: 1509493.<br><br>We are proud to offer this delightful 4 bedroom, 2 bathroom terraced house in a great location.<br><br>Available to move in from 01 October 2022, this property benefits from available parking, a warm fireplace, and garden access. Property is offered unfurnished.<br><br>Viewing highly recommended. Contact OpenRent today for more details or to arrange a viewing!<br><br><b>Summary</b><br><br>Rent £2,300.00 per month (£530.77 per week)<br>Deposit / Bond is £0.00<br><br>Minimum tenancy is 6 months<br>Maximum number of tenants is 6<br><br><b>Summary &amp; Exclusions:</b><br>- Rent Amount: £2,300.00 per month (£530.77 per week)<br>- Deposit / Bond: £0.00<br>- 4 Bedrooms<br>- 2 Bathrooms<br>- Property comes unfurnished<br>- Available to move in from 02 October, 2022<br>- Minimum tenancy term is 6 months<br>- Maximum number of tenants is 6<br>- Students welcome to enquire<br>- No Pets, sorry<br>- No Smokers<br>- Family Friendly<br>- Bills not included<br>- Property has parking<br>- Property has garden access<br>- Property has fireplace<br>- EPC Rating: D<br><br><b> If calling, please quote reference: 1509493 </b><br><br><b>Fees:</b><br>You will <b>not</b> be charged any admin fees.<br><br>** Contact today to book a viewing and have the landlord show you round! **<br>Request Details form responded to 24/7, with phone bookings available 9am-9pm, 7 days a week.<br><br><i>OpenRent endeavours to make all property particulars as accurate and reliable as possible, however if you require any further clarification or information please contact us. When applying for a tenancy using the Rent Now process, you will be required to pay one month's rent and any deposit before moving in. This will be paid to OpenRent and released to the landlord once you have moved in. With OpenRent there are no administration fees to pay. </i><br><br><i>Property Reference one million five hundred and nine thousand four hundred and ninety-three</i>",
+    "agent_postcode": "EC1N 8JY",
+    "post_town": "Oxford",
+    "details_url": "https://www.zoopla.co.uk/to-rent/details/62553855?utm_source=v1:5bWFDybfWx7C7AGpeagt7mP3PgcqjuqJ&utm_medium=api",
+    "short_description": "We are proud to offer this delightful 4 bedroom, 2 bathroom terraced house in a great location. Available to move in from 01 October 2022, this property benefits from available parking, a warm fi... ** Property Reference: 1509493 **",
+    "outcode": "OX2",
+    "other_image": [
+        {
+            "url": "https://lid.zoocdn.com/645/430/ab0868312555cca5abaee3cbbebc39c33b3639f5.jpg",
+            "description": ""
+        },
+        {
+            "url": "https://lid.zoocdn.com/645/430/dbc3f0844381b2bee7cce4ce3cc9dac9007e46e2.jpg",
+            "description": ""
+        },
+        {
+            "url": "https://lid.zoocdn.com/645/430/02bca5d860fe468bf514728e8dbf8af5ceca6ad1.jpg",
+            "description": ""
+        },
+        {
+            "url": "https://lid.zoocdn.com/645/430/7d03efc01a875a79161df21a5ebcc6e2a113ac94.jpg",
+            "description": ""
+        },
+        {
+            "url": "https://lid.zoocdn.com/645/430/ed9934d769c765729c98808e730d30b065b1cdb1.jpg",
+            "description": ""
+        }
+    ],
+    "image_645_430_url": "https://lid.zoocdn.com/645/430/ab0868312555cca5abaee3cbbebc39c33b3639f5.jpg",
+    "title": "4 bed terraced house to rent",
+    "county": "Oxfordshire",
+    "price": "531",
+    "is_premium_listing": 0,
+    "available_from_display": "Available immediately",
+    "listing_id": "62553855",
+    "image_caption": "",
+    "bullet": [
+        "No Agent Fees",
+        "Students Can Enquire",
+        "Property Reference Number: 1509493"
+    ],
+    "image_80_60_url": "https://lid.zoocdn.com/80/60/ab0868312555cca5abaee3cbbebc39c33b3639f5.jpg",
+    "property_number": "Henry Road",
+    "status": "to_rent",
+    "agent_name": "OpenRent",
+    "num_recepts": 0,
+    "property_badge": "Just added",
+    "country": "England",
+    "company_id": 28660,
+    "first_published_date": "2022-10-01 11:14:46",
+    "displayable_address": "Henry Road, Oxford OX2",
+    "street_name": "",
+    "num_bathrooms": 2,
+    "incode": "0DG",
+    "featured_type": "S",
+    "agent_logo": "https://st.zoocdn.com/zoopla_static_agent_logo_(147555).png",
+    "price_change": [
+        {
+            "direction": "",
+            "date": "2022-10-01 10:27:12",
+            "percent": "0%",
+            "price": 462
+        },
+        {
+            "direction": "up",
+            "date": "2022-10-01 13:30:58",
+            "percent": "14.9%",
+            "price": 531
+        }
+    ],
+    "agent_phone": "020 3542 2178",
+    "group_id": 0,
+    "image_354_255_url": "https://lid.zoocdn.com/354/255/ab0868312555cca5abaee3cbbebc39c33b3639f5.jpg",
+    "image_url": "https://lid.zoocdn.com/645/430/ab0868312555cca5abaee3cbbebc39c33b3639f5.jpg",
+    "last_published_date": "2022-10-02 02:40:23",
+    "price_change_summary": {
+        "direction": "up",
+        "percent": "14.9%",
+        "last_updated_date": "2022-10-01 13:30:58"
+    },
+    "original_image": [
+        "https://lc.zoocdn.com/ab0868312555cca5abaee3cbbebc39c33b3639f5.jpg",
+        "https://lc.zoocdn.com/dbc3f0844381b2bee7cce4ce3cc9dac9007e46e2.jpg",
+        "https://lc.zoocdn.com/02bca5d860fe468bf514728e8dbf8af5ceca6ad1.jpg",
+        "https://lc.zoocdn.com/7d03efc01a875a79161df21a5ebcc6e2a113ac94.jpg",
+        "https://lc.zoocdn.com/ed9934d769c765729c98808e730d30b065b1cdb1.jpg"
+    ]
+}
