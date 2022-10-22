@@ -1,6 +1,7 @@
 const axios = require("axios");
 const Property = require("./property.js");
 require("dotenv/config");
+const upload = require("./write");
 
 const options = {
   method: "GET",
@@ -24,7 +25,6 @@ axios
   .request(options)
   .then(function (response) {
     let properties = response.data.listing;
-
     for (let property of properties) {
       listing = new Property.Property(
         property.property_id,
@@ -39,17 +39,8 @@ axios
         property.displayable_address,
         property.details_url
       );
-      listing.createJSONFile();
+      upload.save(listing);
     }
-
-    // fs.appendFile(
-    //   "./propertyListings/result3.json",
-    //   JSON.stringify(response.data.listing[0]),
-    //   function (err) {
-    //     if (err) throw err;
-    //     console.log("Saved!");
-    //   }
-    // );
   })
   .catch(function (error) {
     console.error(error);

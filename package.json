@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/smujuzi/House-Finder#readme",
   "dependencies": {
+    "aws-sdk": "^2.1238.0",
     "axios": "^0.27.2",
     "fs": "0.0.1-security"
   },
