@@ -1,12 +1,1 @@
-{
-  "Title": "2 bed flat to rent",
-  "Agent-Name": "Ocean - Clifton",
-  "Agent-Phone": "01268 810994",
-  "Location-Approx": 0,
-  "Furnished-State": "unfurnished",
-  "Property-Type": "Flat",
-  "Rental-Price": 1350,
-  "Available-From": "Available from 14th Nov 2022",
-  "Display-Address": "Royal Park BS8",
-  "Details": "https://www.zoopla.co.uk/to-rent/details/38755086?utm_source=v1:5bWFDybfWx7C7AGpeagt7mP3PgcqjuqJ&utm_medium=api"
-}
+{"Property-Id":29680325,"Title":"2 bed flat to rent","Agent-Name":"Ocean - Clifton","Agent-Phone":"01268 810994","Location-Approx":0,"Furnished-State":"unfurnished","Property-Type":"Flat","Rental-Price":1350,"Available-From":"Available from 14th Nov 2022","Display-Address":"Royal Park BS8","Details":"https://www.zoopla.co.uk/to-rent/details/38755086?utm_source=v1:5bWFDybfWx7C7AGpeagt7mP3PgcqjuqJ&utm_medium=api"}

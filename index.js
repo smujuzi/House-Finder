@@ -1,6 +1,6 @@
 const axios = require("axios");
 const Property = require("./property.js");
-require('dotenv/config');
+require("dotenv/config");
 
 const options = {
   method: "GET",
@@ -27,6 +27,7 @@ axios
 
     for (let property of properties) {
       listing = new Property.Property(
+        property.property_id,
         property.title,
         property.agent_name,
         property.agent_phone,
