@@ -2,6 +2,7 @@ const fs = require("fs");
 
 class Property {
   //important
+  propertyId;
   title;
   agentName;
   agentPhone;
@@ -15,6 +16,7 @@ class Property {
 
   //extra
   /**
+     * //branch_id? listing_id? -> Most likey unique? property_id?
      * lastPublishedDate;
        numBedrooms;
        lisitngStatus;
@@ -26,6 +28,7 @@ class Property {
      */
 
   constructor(
+    propertyId,
     title,
     agentName,
     agentPhone,
@@ -37,6 +40,7 @@ class Property {
     displayableAddress,
     details
   ) {
+    this.propertyId = propertyId;
     this.title = title;
     this.agentName = agentName;
     this.agentPhone = agentPhone;
@@ -51,6 +55,7 @@ class Property {
 
   createJSONFile() {
     let jsonObject = {
+      "Property-Id": this.propertyId,
       Title: this.title,
       "Agent-Name": this.agentName,
       "Agent-Phone": this.agentPhone,
