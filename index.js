@@ -39,7 +39,7 @@ axios
         property.displayable_address,
         property.details_url
       );
-      upload.save(listing);
+      upload.process(listing, property.property_id);
     }
   })
   .catch(function (error) {
