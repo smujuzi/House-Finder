@@ -43,7 +43,7 @@ async function sendCelebrationEmail(propertyInfo) {
   };
 
   const templateData = {
-    response: finalgetResponseProperty(propertyInfo),
+    response: getResponseProperty(propertyInfo),
   };
 
   const params = {
@@ -60,7 +60,7 @@ async function sendCelebrationEmail(propertyInfo) {
   //return email_data
 }
 
-function finalgetResponseProperty(propertyInfo) {
+function getResponseProperty(propertyInfo) {
   console.log("new test");
   const response = `
           <h1> New Property Added: <\/h1>
