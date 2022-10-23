@@ -4,13 +4,13 @@ require("dotenv/config");
 const upload = require("./write");
 const searchCriteria = require("./searchCriteria.js");
 
+exports.handler = async (event, context, callback) => {
+  response = await findHouse().promise();
 
+  return response;
+};
 
-
-
-
-
-function findHouse() {
+async function findHouse() {
   axios
     .request(searchCriteria.options)
     .then(function (response) {
