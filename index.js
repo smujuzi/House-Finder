@@ -26,8 +26,9 @@ axios
   .then(function (response) {
     let properties = response.data.listing;
     for (let property of properties) {
+
       listing = new Property.Property(
-        property.property_id,
+        parseInt(property.listing_id),
         property.title,
         property.agent_name,
         property.agent_phone,
@@ -39,7 +40,7 @@ axios
         property.displayable_address,
         property.details_url
       );
-      upload.save(listing);
+      upload.process(listing, parseInt(property.listing_id));
     }
   })
   .catch(function (error) {
