@@ -18,30 +18,23 @@ let checkPresent = async function (property_id) {
   };
 
   let exists = false;
-  console.log("right here");
   let result = await docClient.get(params).promise();
   if (result.Item !== undefined && result.Item !== null) {
     exists = true;
   }
-  console.log("out");
 
   return exists;
 };
 
 let process = async function (input, property_id) {
-  console.log("current property id", property_id);
-  //console.log("current input", input);
-
   let result = await checkPresent(property_id);
 
   if (!result) {
     await save(input);
     await email.sendPropertyEmail(input);
   } else {
-    console.log("STUART LOG: Property already in table");
+    console.info("STUART LOG: Property already in table");
   }
-  //else do nothing as property already in table
-  console.log("end");
 };
 
 let save = async function (input) {

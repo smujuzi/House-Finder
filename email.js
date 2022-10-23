@@ -43,8 +43,6 @@ async function sendPropertyEmail(propertyInfo) {
 }
 
 function getResponseProperty(propertyInfo) {
-  console.log("STUART LOG: Property Info Object", propertyInfo);
-
   const response = `
           <h1> New Property Added: <\/h1>
           <h3> Check out the details below! </h3>

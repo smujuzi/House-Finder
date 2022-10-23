@@ -26,10 +26,6 @@ axios
   .then(function (response) {
     let properties = response.data.listing;
     for (let property of properties) {
-      // console.log("Index current property id", property.property_id);
-      // if (property.property_id == undefined) {
-      //   console.log("current input", property);
-      // }
 
       listing = new Property.Property(
         parseInt(property.listing_id),
