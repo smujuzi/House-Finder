@@ -3,21 +3,6 @@ aws.config.update({
   region: "eu-west-1",
 });
 
-// const propertyInfo = {
-//   "Property-Id": 2694301,
-//   Title: "2 bed flat to rent",
-//   "Agent-Name": "Homelink",
-//   "Agent-Phone": "01834 818024",
-//   "Location-Approx": 0,
-//   "Furnished-State": "part_furnished",
-//   "Property-Type": "Flat",
-//   "Rental-Price": 1400,
-//   "Available-From": "Available from 30th Oct 2022",
-//   "Display-Address": "Balcony Flat, West Mall, Clifton BS8",
-//   Details:
-//     "https://www.zoopla.co.uk/to-rent/details/62711294?utm_source=v1:5bWFDybfWx7C7AGpeagt7mP3PgcqjuqJ&utm_medium=api",
-// };
-
 async function sendPropertyEmail(propertyInfo) {
   const ses = new aws.SES();
 
@@ -55,7 +40,6 @@ async function sendPropertyEmail(propertyInfo) {
 
   const email_data = await ses.sendTemplatedEmail(params).promise();
   console.info("Successfully sent the email : " + JSON.stringify(email_data));
-  //return email_data
 }
 
 function getResponseProperty(propertyInfo) {
@@ -64,23 +48,21 @@ function getResponseProperty(propertyInfo) {
   const response = `
           <h1> New Property Added: <\/h1>
           <h3> Check out the details below! </h3>
-          <p> Property-Id: ${propertyInfo["listingId"]} <br>
-              Title: ${propertyInfo["Title"]} <br>
-              Agent-Name: ${propertyInfo["Agent-Name"]} <br>
-              Agent-Phone: ${propertyInfo["Agent-Phone"]} <br>
-              Location-Approx: ${propertyInfo["Location-Approx"]} <br>
-              Furnished-State: ${propertyInfo["Furnished-State"]} <br>
-              Property-Type: ${propertyInfo["Property-Type"]} <br>
-              Rental-Price: ${propertyInfo["Rental-Price"]} <br>
-              Available-From: ${propertyInfo["Available-From"]} <br>
-              Display-Address: ${propertyInfo["Display-Address"]} <br>
-              Details: ${propertyInfo["Details"]} 
+          <p> Property-Id: ${propertyInfo["propertyId"]} <br>
+              Title: ${propertyInfo["title"]} <br>
+              Agent-Name: ${propertyInfo["agentName"]} <br>
+              Agent-Phone: ${propertyInfo["agentPhone"]} <br>
+              Location-Approx: ${propertyInfo["locationIsApprox"]} <br>
+              Furnished-State: ${propertyInfo["furnishedState"]} <br>
+              Property-Type: ${propertyInfo["propertyType"]} <br>
+              Rental-Price: ${propertyInfo["rentalPrice"]} <br>
+              Available-From: ${propertyInfo["availableFrom"]} <br>
+              Display-Address: ${propertyInfo["displayableAddress"]} <br>
+              Details: ${propertyInfo["details"]} 
           <\/p>
       `;
 
   return response;
 }
-
-// sendPropertyEmail(propertyInfo);
 
 module.exports = { sendPropertyEmail };
