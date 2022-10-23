@@ -21,22 +21,22 @@ const propertyInfo = {
 async function sendCelebrationEmail(propertyInfo) {
   const ses = new aws.SES();
 
-  // Create createTemplate params
-  //   var testtemplate = {
-  //     Template: {
-  //       TemplateName: "testtemplate" /* required */,
-  //       HtmlPart:
-  //         "<html>\r\n\r\n<head>\r\n <title>Test Title</title>\r\n</head>\r\n\r\n<body>\r\n {{response}} \r\n</body>\r\n\r\n</html>",
-  //       SubjectPart: "Temperature Difference",
-  //       TextPart: "Test email body!",
-  //     },
-  //   };
-  // USED TO CREATE EMAIL TEMPLATE - ONLY NEEDS TO BE CREATED ONCE IN AWS
-  //   try {
-  //     result = await ses.createTemplate(testtemplate).promise();
-  //   } catch {
-  //     console.log("failed");
-  //   }
+  //Create createTemplate params
+  // var propertytemplate = {
+  //   Template: {
+  //     TemplateName: "propertytemplate" /* required */,
+  //     HtmlPart:
+  //       "<html>\r\n\r\n<head>\r\n <title>Test Title</title>\r\n</head>\r\n\r\n<body>\r\n {{response}} \r\n</body>\r\n\r\n</html>",
+  //     SubjectPart: "* NEW PROPERTY AVAILABLE *",
+  //     TextPart: "Test email body!",
+  //   },
+  // };
+  // //USED TO CREATE EMAIL TEMPLATE - ONLY NEEDS TO BE CREATED ONCE IN AWS
+  // try {
+  //   result = await ses.createTemplate(propertytemplate).promise();
+  // } catch {
+  //   console.log("failed");
+  // }
 
   const destination = {
     ToAddresses: ["stuartmujuzi@gmail.com"],
@@ -49,11 +49,9 @@ async function sendCelebrationEmail(propertyInfo) {
   const params = {
     Source: "stuartmujuzi@gmail.com",
     Destination: destination,
-    Template: "testtemplate",
+    Template: "propertytemplate",
     TemplateData: JSON.stringify(templateData),
   };
-
-  console.log("Up to here");
 
   const email_data = await ses.sendTemplatedEmail(params).promise();
   console.info("Successfully sent the email : " + JSON.stringify(email_data));
@@ -61,7 +59,6 @@ async function sendCelebrationEmail(propertyInfo) {
 }
 
 function getResponseProperty(propertyInfo) {
-  console.log("new test");
   const response = `
           <h1> New Property Added: <\/h1>
           <h3> Check out the details below! </h3>
