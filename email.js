@@ -3,7 +3,22 @@ aws.config.update({
   region: "eu-west-1",
 });
 
-async function sendCelebrationEmail(tempKampala, tempLondon) {
+const propertyInfo = {
+  "Property-Id": 2694301,
+  Title: "2 bed flat to rent",
+  "Agent-Name": "Homelink",
+  "Agent-Phone": "01834 818024",
+  "Location-Approx": 0,
+  "Furnished-State": "part_furnished",
+  "Property-Type": "Flat",
+  "Rental-Price": 1400,
+  "Available-From": "Available from 30th Oct 2022",
+  "Display-Address": "Balcony Flat, West Mall, Clifton BS8",
+  Details:
+    "https://www.zoopla.co.uk/to-rent/details/62711294?utm_source=v1:5bWFDybfWx7C7AGpeagt7mP3PgcqjuqJ&utm_medium=api",
+};
+
+async function sendCelebrationEmail(propertyInfo) {
   const ses = new aws.SES();
 
   // Create createTemplate params
@@ -27,12 +42,8 @@ async function sendCelebrationEmail(tempKampala, tempLondon) {
     ToAddresses: ["stuartmujuzi@gmail.com"],
   };
 
-  tempKampala = Math.round(tempKampala);
-  tempLondon = Math.round(tempLondon);
-  const diff = getDiff(tempKampala, tempLondon);
-
   const templateData = {
-    response: getResponse(diff, tempKampala, tempKampala),
+    response: finalgetResponseProperty(propertyInfo),
   };
 
   const params = {
@@ -49,16 +60,28 @@ async function sendCelebrationEmail(tempKampala, tempLondon) {
   //return email_data
 }
 
-function getDiff(tempKampala, tempLondon) {
-  return Math.round(tempKampala - tempLondon);
-}
-
-function getResponse(diff, tempKampala, tempLondon) {
-  const response = `<h1> Temperature: <\/h1> <h3> The day has finally arrived! </h3> <p> Uganda: ${tempKampala}C <br> UK: ${tempLondon}C <br> Difference: ${diff}C`;
+function finalgetResponseProperty(propertyInfo) {
+  console.log("new test");
+  const response = `
+          <h1> New Property Added: <\/h1>
+          <h3> Check out the details below! </h3>
+          <p> Property-Id: ${propertyInfo["Property-Id"]} <br>
+              Title: ${propertyInfo["Title"]} <br>
+              Agent-Name: ${propertyInfo["Agent-Name"]} <br>
+              Agent-Phone: ${propertyInfo["Agent-Phone"]} <br>
+              Location-Approx: ${propertyInfo["Location-Approx"]} <br>
+              Furnished-State: ${propertyInfo["Furnished-State"]} <br>
+              Property-Type: ${propertyInfo["Property-Type"]} <br>
+              Rental-Price: ${propertyInfo["Rental-Price"]} <br>
+              Available-From: ${propertyInfo["Available-From"]} <br>
+              Display-Address: ${propertyInfo["Display-Address"]} <br>
+              Details: ${propertyInfo["Details"]} 
+          <\/p>
+      `;
 
   return response;
 }
 
-sendCelebrationEmail(20, 25);
+sendCelebrationEmail(propertyInfo);
 
-module.exports = { sendCelebrationEmail, getResponse, getDiff };
+module.exports = { sendCelebrationEmail };
