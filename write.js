@@ -1,3 +1,4 @@
+const email = require("./email");
 let AWS = require("aws-sdk");
 let awsConfig = {
   region: "eu-west-1",
@@ -17,20 +18,29 @@ let checkPresent = async function (property_id) {
   };
 
   let exists = false;
+  console.log("right here");
   let result = await docClient.get(params).promise();
   if (result.Item !== undefined && result.Item !== null) {
     exists = true;
-  } 
+  }
+  console.log("out");
 
   return exists;
 };
 
 let process = async function (input, property_id) {
+  console.log("current property id", property_id);
+  //console.log("current input", input);
+
   let result = await checkPresent(property_id);
+
   if (!result) {
     await save(input);
-    //sendEmail(input)
-  } //else do nothing as property already in table
+    await email.sendPropertyEmail(input);
+  } else {
+    console.log("STUART LOG: Property already in table");
+  }
+  //else do nothing as property already in table
   console.log("end");
 };
 

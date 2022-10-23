@@ -26,8 +26,13 @@ axios
   .then(function (response) {
     let properties = response.data.listing;
     for (let property of properties) {
+      // console.log("Index current property id", property.property_id);
+      // if (property.property_id == undefined) {
+      //   console.log("current input", property);
+      // }
+
       listing = new Property.Property(
-        property.property_id,
+        parseInt(property.listing_id),
         property.title,
         property.agent_name,
         property.agent_phone,
@@ -39,7 +44,7 @@ axios
         property.displayable_address,
         property.details_url
       );
-      upload.process(listing, property.property_id);
+      upload.process(listing, parseInt(property.listing_id));
     }
   })
   .catch(function (error) {

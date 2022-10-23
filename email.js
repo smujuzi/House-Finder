@@ -3,20 +3,20 @@ aws.config.update({
   region: "eu-west-1",
 });
 
-const propertyInfo = {
-  "Property-Id": 2694301,
-  Title: "2 bed flat to rent",
-  "Agent-Name": "Homelink",
-  "Agent-Phone": "01834 818024",
-  "Location-Approx": 0,
-  "Furnished-State": "part_furnished",
-  "Property-Type": "Flat",
-  "Rental-Price": 1400,
-  "Available-From": "Available from 30th Oct 2022",
-  "Display-Address": "Balcony Flat, West Mall, Clifton BS8",
-  Details:
-    "https://www.zoopla.co.uk/to-rent/details/62711294?utm_source=v1:5bWFDybfWx7C7AGpeagt7mP3PgcqjuqJ&utm_medium=api",
-};
+// const propertyInfo = {
+//   "Property-Id": 2694301,
+//   Title: "2 bed flat to rent",
+//   "Agent-Name": "Homelink",
+//   "Agent-Phone": "01834 818024",
+//   "Location-Approx": 0,
+//   "Furnished-State": "part_furnished",
+//   "Property-Type": "Flat",
+//   "Rental-Price": 1400,
+//   "Available-From": "Available from 30th Oct 2022",
+//   "Display-Address": "Balcony Flat, West Mall, Clifton BS8",
+//   Details:
+//     "https://www.zoopla.co.uk/to-rent/details/62711294?utm_source=v1:5bWFDybfWx7C7AGpeagt7mP3PgcqjuqJ&utm_medium=api",
+// };
 
 async function sendPropertyEmail(propertyInfo) {
   const ses = new aws.SES();
@@ -59,10 +59,12 @@ async function sendPropertyEmail(propertyInfo) {
 }
 
 function getResponseProperty(propertyInfo) {
+  console.log("STUART LOG: Property Info Object", propertyInfo);
+
   const response = `
           <h1> New Property Added: <\/h1>
           <h3> Check out the details below! </h3>
-          <p> Property-Id: ${propertyInfo["Property-Id"]} <br>
+          <p> Property-Id: ${propertyInfo["listingId"]} <br>
               Title: ${propertyInfo["Title"]} <br>
               Agent-Name: ${propertyInfo["Agent-Name"]} <br>
               Agent-Phone: ${propertyInfo["Agent-Phone"]} <br>
@@ -79,6 +81,6 @@ function getResponseProperty(propertyInfo) {
   return response;
 }
 
-sendPropertyEmail(propertyInfo);
+// sendPropertyEmail(propertyInfo);
 
 module.exports = { sendPropertyEmail };
