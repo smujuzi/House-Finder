@@ -7,7 +7,7 @@ Resources:
   LambdaFunction:
     Type: AWS::Lambda::Function
     Properties:
-      FunctionName: house-finder-lambda
+      FunctionName: house-finder-lambda-test
       Description: House Finder Lambda function
       Runtime: nodejs16.x
       Role: arn:aws:iam::770653768231:role/service-role/house-finder-lambda-role-9aq25b46
@@ -23,7 +23,7 @@ Resources:
     Type: AWS::Events::Rule
     DependsOn: LambdaFunction
     Properties:
-      Name: house-finder-event-rule
+      Name: house-finder-event-rule-test
       Description: "ScheduledRule"
       ScheduleExpression: "rate(1 hour)"
       State: "ENABLED"
