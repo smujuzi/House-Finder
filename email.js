@@ -18,7 +18,7 @@ const propertyInfo = {
     "https://www.zoopla.co.uk/to-rent/details/62711294?utm_source=v1:5bWFDybfWx7C7AGpeagt7mP3PgcqjuqJ&utm_medium=api",
 };
 
-async function sendCelebrationEmail(propertyInfo) {
+async function sendPropertyEmail(propertyInfo) {
   const ses = new aws.SES();
 
   //Create createTemplate params
@@ -79,6 +79,6 @@ function getResponseProperty(propertyInfo) {
   return response;
 }
 
-sendCelebrationEmail(propertyInfo);
+sendPropertyEmail(propertyInfo);
 
-module.exports = { sendCelebrationEmail };
+module.exports = { sendPropertyEmail };
